@@ -14,6 +14,7 @@
             <TextField layoutX="231.0" layoutY="187.0" />
             <Text layoutX="231.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
             <Button layoutX="279.0" layoutY="232.0" mnemonicParsing="false" text="Login" />
+            <Text layoutX="233.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No account yet? Register?" />
       </children>
     </AnchorPane>
   </children>
