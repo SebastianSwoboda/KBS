@@ -1,4 +1,4 @@
-package sample;
+package logic;
 
 public class Controller {
 }
