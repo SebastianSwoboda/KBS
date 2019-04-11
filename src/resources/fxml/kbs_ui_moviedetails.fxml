@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MovieDetailController">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
@@ -14,6 +14,7 @@
             <Text layoutX="246.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Text" wrappingWidth="297.5999999999999" />
             <Text layoutX="246.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="297.5999999999999" />
             <Button layoutX="485.0" layoutY="305.0" mnemonicParsing="false" text="Reservieren" />
+            <Button layoutX="29.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleOnBackButtonEvent" text="Zurück" />
       </children>
     </AnchorPane>
   </children>
