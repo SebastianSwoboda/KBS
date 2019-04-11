@@ -10,7 +10,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../ui/kbs_ui_register.fxml"));
+        //To Do: change root to register
+        Parent root = FXMLLoader.load(getClass().getResource("../ui/kbs_ui_reserve.fxml"));
         primaryStage.setTitle("KBS Login");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
