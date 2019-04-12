@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.ReserveController">
+<AnchorPane fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReserveController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e0e0e" height="26.0" layoutX="182.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
       <Text fill="WHITE" layoutX="282.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screen" />

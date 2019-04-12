@@ -1,9 +1,8 @@
-package logic;
+package controller;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,9 +10,7 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.ResourceBundle;
 
 public class SuccessController{
 
@@ -43,7 +40,7 @@ public class SuccessController{
         Stage newStage = new Stage();
 
         Parent root = loader.load();
-        MovieController movieController = loader.getController();
+        controller.MovieController movieController = loader.getController();
 
         Scene scene = new Scene(root);
 
