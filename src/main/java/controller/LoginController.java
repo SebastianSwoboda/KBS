@@ -39,7 +39,7 @@ public class LoginController implements Initializable {
 
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
     }
 

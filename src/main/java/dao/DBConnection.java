@@ -9,7 +9,7 @@ public class DBConnection {
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con= DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/mydb","root","root");
+                "jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","1234");
         return con;
     }
 
