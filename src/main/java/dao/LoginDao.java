@@ -1,5 +1,8 @@
 package dao;
 
+import sun.dc.pr.PRError;
+
+import javax.xml.transform.Result;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,7 +14,10 @@ public class LoginDao {
 
         connection = DBConnection.connectToDb();
         PreparedStatement preparedStatement =
-                connection.prepareStatement("select from Bentuzer where ('Benutzername', 'Passwort')");
+                connection.prepareStatement("Select Benutzername, Passwort from Benutzer where Benutzername = ? and Passwort = ?");
+        preparedStatement.setString(1, username);
+        preparedStatement.setString(2, password);
+
         ResultSet resultSet = preparedStatement.getResultSet();
         return resultSet.next();
 
