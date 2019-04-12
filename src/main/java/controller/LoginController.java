@@ -1,5 +1,6 @@
 package controller;
 
+import dao.LoginDao;
 import factory.CreateStageFactory;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -30,12 +31,14 @@ public class LoginController implements Initializable {
     @FXML
     private void handleLoginButtonAction(ActionEvent event) {
         try {
-            if (usernameField.getText().equals("test") && passwordField.getText().equals("test")) {
+            LoginDao loginDao = new LoginDao();
+            if (loginDao.verifyLogin(usernameField.getText(), passwordField.getText())) {
                 createStage.createMovieStage(stage);
 
 
+
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
 
         }
     }
