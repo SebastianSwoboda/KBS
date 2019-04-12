@@ -17,6 +17,7 @@ public class LoginDao {
                 connection.prepareStatement("Select Benutzername, Passwort from Benutzer where Benutzername = ? and Passwort = ?");
         preparedStatement.setString(1, username);
         preparedStatement.setString(2, password);
+        preparedStatement.executeQuery();
 
         ResultSet resultSet = preparedStatement.getResultSet();
         return resultSet.next();
