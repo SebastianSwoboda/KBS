@@ -1,5 +1,7 @@
 package logic;
 
 public enum Language {
-    DE, EN, FR;
+    DE,
+    EN,
+    FR
 }

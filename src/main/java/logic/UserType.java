@@ -1,5 +1,6 @@
 package logic;
 
 public enum UserType {
-    Admin, User;
+    Admin,
+    User
 }
