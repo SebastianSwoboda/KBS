@@ -3,6 +3,7 @@ package controller;
 import factory.CreateStageFactory;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,6 +13,8 @@ public class MovieController {
 
     Stage stage;
     CreateStageFactory createStageFactory = new CreateStageFactory();
+
+
 
 
     @FXML
